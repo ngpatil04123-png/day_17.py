@@ -86,9 +86,13 @@ row=int(input("Enter the row :" ))
 columns=int(input("Enter the colums :"))
 matrix=[]
 for i in range(row):
-    x=[int(num) for num in input(f"Enter the  rows {i+1} : ").split()]
-    matrix.append(x)
+    ro=[]
+    for j in range(columns):
+        x = int(input("Enter the elements : "))
+        ro.append(x)
+    matrix.append(ro)
 print(matrix)
+
 
 
 
